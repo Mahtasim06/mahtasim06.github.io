@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Gallery — Mahtasim Masrafi Chowdhury</title>
+<meta name="description" content="Photos of Mahtasim Masrafi Chowdhury competing in robotics carnivals, math olympiads, STEM events, and building robots.">
+<link rel="icon" href="assets/icon/favicon.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink:'#0B1220', ink2:'#0F1B33', card:'#121F3D', line:'#20304F',
+          fg:'#E5E9F0', muted:'#93A1B8',
+          indigo:'#6366F1', fuchsia:'#EC4899', amber:'#F59E0B',
+          teal:'#22D3EE', violet:'#A78BFA', emerald:'#34D399', rose:'#FB7185'
+        },
+        fontFamily: { display:['Outfit','sans-serif'], sans:['Inter','sans-serif'], mono:['IBM Plex Mono','monospace'] }
+      }
+    }
+  }
+</script>
+<style>
+  body{ background:#0B1220; }
+  .thumb{ cursor:zoom-in; }
+  .thumb img{ transition:transform .3s ease; }
+  .thumb:hover img{ transform:scale(1.05); }
+  #lightbox{ display:none; }
+  #lightbox.open{ display:flex; }
+  ::selection{ background:#EC4899; color:#fff; }
+  .org-logo{ width:36px; height:36px; border-radius:9999px; }
+  .group-header{ border-bottom:1px solid #20304F; padding-bottom:10px; margin-bottom:22px; }
+  .sec-blob{ position:absolute; border-radius:9999px; filter:blur(70px); opacity:.16; pointer-events:none; z-index:0; }
+footer{ position:relative; }
+</style>
+</head>
+<body class="bg-ink text-fg font-sans antialiased">
+
+<nav class="fixed top-0 w-full bg-ink/85 backdrop-blur-md border-b border-line z-40">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <!-- <a href="index.html" class="font-display font-bold text-lg text-white">Mahtasim<span class="text-fuchsia">.</span></a> -->
+     <a href="#" class="flex items-center gap-2 font-display font-bold text-lg text-white">
+  <img src="assets/icon/favicon.png" alt="Mahtasim" class="w-9 h-9 rounded-full object-cover border border-line">
+  Mahtasim<span class="text-fuchsia"></span>
+</a>
+    <a href="index.html" class="text-sm text-muted hover:text-fuchsia transition flex items-center gap-2">
+      <i class="fa-solid fa-arrow-left"></i> Back to portfolio
+    </a>
+  </div>
+</nav>
+
+<header class="pt-32 pb-12 px-6 max-w-6xl mx-auto">
+  <h1 class="text-4xl md:text-5xl font-display font-extrabold text-white mb-4">Photo Gallery</h1>
+  <p class="text-muted max-w-2xl">A dedicated section for every competition, club, and robot build. Click any photo to view it full-size.</p>
+  <!-- <p class="text-xs font-mono text-fuchsia mt-3">Placeholder frames below — see the README to swap in your real photos.</p> -->
+</header>
+
+<main class="px-6 max-w-6xl mx-auto pb-24 space-y-16">
+
+  <section id="iccp-russia">
+    <div class="group-header flex items-center gap-3">
+      <img src="assets/logos/iccp.png" class="org-logo" alt="ICCP">
+      <a href="https://www.bssnews.net/news/393548" target="_blank" rel="noopener noreferrer" class="text-sm text-muted hover:text-fuchsia transition">
+      <div><h2 class="text-2xl font-display font-bold text-white">"Children for Peace" World Children's Conference — Russia 2026</h2>
+      <p class="text-muted text-sm">Winner & Participant.</p></div>
+    </div></a>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4" data-gallery="iccp-russia"></div>
+  </section>
+
+  <!-- <section id="german-math-olympiad">
+    <div class="group-header flex items-center gap-3">
+      <img src="assets/logos/gmo.png" class="org-logo" alt="German Math Olympiad">
+      <div><h2 class="text-2xl font-display font-bold text-white">German Math Olympiad</h2>
+      <p class="text-muted text-sm">Bronze Medalist, Online Final Round 2026.</p></div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4" data-gallery="german-math-olympiad"></div>
+  </section> -->
+
+  <!-- <section id="iymc">
+    <div class="group-header flex items-center gap-3">
+      <img src="assets/logos/iymc.png" class="org-logo" alt="IYMC">
+      <div><h2 class="text-2xl font-display font-bold text-white">International Youth Math Challenge</h2>
+      <p class="text-muted text-sm">Bronze Honoured, 2025.</p></div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4" data-gallery="iymc"></div>
+  </section> -->
+
+  <section id="bdro">
+    <div class="group-header flex items-center gap-3">
+      <img src="assets/logos/bdro.png" class="org-logo" alt="BDRO">
+      <div><h2 class="text-2xl font-display font-bold text-white">BDRO</h2>
+      <p class="text-muted text-sm">Nationalist — 2023, 2025.</p></div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4" data-gallery="bdro"></div>
+  </section>
+
+  <section id="bdbo">
+    <div class="group-header flex items-center gap-3">
+      <img src="assets/logos/bdbo.png" class="org-logo" alt="BDBO">
+      <a href="https://bdbo.org/bdbo-dhaka-north-regional-biology-olympiad-2026/" target="_blank" rel="noopener noreferrer" class="text-sm text-muted hover:text-fuchsia transition">
+      <div><h2 class="text-2xl font-display font-bold text-white">BDBO</h2>
+      <p class="text-muted text-sm">Nationalist (2024, 2025, 2026) · First Runner-up Regional (2025, 2026) · Second Runner-up Regional (2024).</p></div>
+    </div></a>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4" data-gallery="bdbo"></div>
+  </section>
+
+  <section id="bdeo">
+    <div class="group-header flex items-center gap-3">
+      <img src="assets/logos/bdeo.png" class="org-logo" alt="BDEO">
+      <a href="https://www.facebook.com/share/p/1HdZcpy8Bb/" target="_blank" rel="noopener noreferrer" class="text-sm text-muted hover:text-fuchsia transition">
+      <div><h2 class="text-2xl font-display font-bold text-white">BDEO</h2>
+      <p class="text-muted text-sm">Nationalist — 2024, 2025, 2026.</p></div>
+    </div></a>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4" data-gallery="bdeo"></div>
+  </section>
+
+  <section id="bdmo">
+    <div class="group-header flex items-center gap-3">
+      <img src="assets/logos/bdmo.png" class="org-logo" alt="BDMO">
+      <a href="https://matholympiad.org.bd/profile/518320" target="_blank" rel="noopener noreferrer" class="text-sm text-muted hover:text-fuchsia transition">
+      <div><h2 class="text-2xl font-display font-bold text-white">BDMO</h2>
+      <p class="text-muted text-sm">Nationalist (2025) · First Runner-up Regional (2025).</p></div>
+    </div></a>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4" data-gallery="bdmo"></div>
+  </section>
+
+  <section id="bdjso">
+    <div class="group-header flex items-center gap-3">
+      <img src="assets/logos/bdjso.png" class="org-logo" alt="BDJSO">
+      <a href="https://bdjso.org/%E0%A6%86%E0%A6%9E%E0%A7%8D%E0%A6%9A%E0%A6%B2%E0%A6%BF%E0%A6%95-%E0%A6%A2%E0%A6%BE%E0%A6%95%E0%A6%BE/#:~:text=Mahtasim%20Masraf%C4%B1%20Chowdhury" target="_blank" rel="noopener noreferrer" class="text-sm text-muted hover:text-fuchsia transition">
+      <div><h2 class="text-2xl font-display font-bold text-white">BDJSO</h2>
+      <p class="text-muted text-sm">Nationalist (2025) · First Runner-up Regional (2025).</p></div>
+    </div></a>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4" data-gallery="bdjso"></div>
+  </section>
+
+  <section id="boce">
+    <div class="group-header flex items-center gap-3">
+      <img src="assets/logos/boce.png" class="org-logo" alt="BOCE">
+      <a href="https://www.slsn.community/profile/257500" target="_blank" rel="noopener noreferrer" class="text-sm text-muted hover:text-fuchsia transition">
+      <div><h2 class="text-2xl font-display font-bold text-white">BOCE</h2>
+      <p class="text-muted text-sm">Champion, National Round 2026.</p></div>
+    </div></a>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4" data-gallery="boce"></div>
+  </section>
+
+  <section id="buet-robo-carnival">
+    <div class="group-header flex items-center gap-3">
+      <img src="assets/logos/buet.png" class="org-logo" alt="BUET Robo Carnival">
+      <a href="https://www.facebook.com/share/p/18m4oYkCoS/" target="_blank" rel="noopener noreferrer" class="text-sm text-muted hover:text-fuchsia transition">
+      <div><h2 class="text-2xl font-display font-bold text-white">BUET Robo Carnival</h2>
+      <p class="text-muted text-sm">Second Runner-up, Robo Olympiad 2026.</p></div>
+    </div></a>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4" data-gallery="buet-robo-carnival"></div>
+  </section>
+
+  <section id="drmc-robotics-olympiad">
+    <div class="group-header flex items-center gap-3">
+      <img src="assets/logos/drmcsc.png" class="org-logo" alt="DRMC Robotics Olympiad">
+      <a href="https://www.facebook.com/share/p/19Wiq1MvGL/" target="_blank" rel="noopener noreferrer" class="text-sm text-muted hover:text-fuchsia transition">
+      <div><h2 class="text-2xl font-display font-bold text-white">DRMC Robotics Olympiad</h2>
+      <p class="text-muted text-sm">First Runner-up, DRMC Science Carnival 2026.</p></div>
+    </div></a>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4" data-gallery="drmc-robotics-olympiad"></div>
+  </section>
+
+  <section id="sagc">
+    <div class="group-header flex items-center gap-3">
+      <img src="assets/logos/sagc.png" class="org-logo" alt="SAGC">
+      <div><h2 class="text-2xl font-display font-bold text-white">SAGC Mega Science Fest</h2>
+      <p class="text-muted text-sm">First Runner-up, Project Display 2024.</p></div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4" data-gallery="sagc"></div>
+  </section>
+
+  <section id="aiub">
+    <div class="group-header flex items-center gap-3">
+      <img src="assets/logos/aiub.png" class="org-logo" alt="AIUB">
+      <a href="https://www.facebook.com/share/p/1DjVdHrsa9/" target="_blank" rel="noopener noreferrer" class="text-sm text-muted hover:text-fuchsia transition">
+      <div><h2 class="text-2xl font-display font-bold text-white">AIUB CS Fest</h2>
+      <p class="text-muted text-sm">Second Runner-up, Project Display 2024.</p></div>
+    </div></a>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4" data-gallery="aiub"></div>
+  </section>
+
+  <section id="bcic">
+    <div class="group-header flex items-center gap-3">
+      <img src="assets/logos/bcic.png" class="org-logo" alt="BCIC">
+      <a href="https://www.facebook.com/share/1B1GgW3kGa/" target="_blank" rel="noopener noreferrer" class="text-sm text-muted hover:text-fuchsia transition">
+      <div><h2 class="text-2xl font-display font-bold text-white">BCIC College Science Fest</h2>
+      <p class="text-muted text-sm">First Runner-up, Project Display 2023.</p></div>
+    </div></a>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4" data-gallery="bcic"></div>
+  </section>
+
+  <section id="drmc-tech-carnival">
+    <div class="group-header flex items-center gap-3">
+      <img src="assets/logos/drmcit.png" class="org-logo" alt="DRMC Tech Carnival">
+      <a href="https://www.facebook.com/share/p/19KqE2HNvp/" target="_blank" rel="noopener noreferrer" class="text-sm text-muted hover:text-fuchsia transition">
+      <div><h2 class="text-2xl font-display font-bold text-white">DRMC Tech Carnival</h2>
+      <p class="text-muted text-sm">Runner-up, Project Display 2024.</p></div>
+    </div></a>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4" data-gallery="drmc-tech-carnival"></div>
+  </section>
+
+  <section id="heritage-in-frames">
+    <div class="group-header flex items-center gap-3">
+      <img src="assets/logos/dicc.png" class="org-logo" alt="Heritage in Frames">
+      <a href="https://www.facebook.com/share/p/19LYjtXjbG/" target="_blank" rel="noopener noreferrer" class="text-sm text-muted hover:text-fuchsia transition">
+      <div><h2 class="text-2xl font-display font-bold text-white">Heritage in Frames</h2>
+      <p class="text-muted text-sm">2nd Place, DRMC Ramadan Festival 2024.</p></div>
+    </div></a>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4" data-gallery="heritage-in-frames"></div>
+  </section>
+
+    <section id="inter-math-olympiad">
+    <div class="group-header flex items-center gap-3">
+      <img src="assets/logos/drmcmc.png" class="org-logo" alt="BoiBook">
+      <a href="https://www.facebook.com/share/p/1EzctujxZF/" target="_blank" rel="noopener noreferrer" class="text-sm text-muted hover:text-fuchsia transition">
+      <div><h2 class="text-2xl font-display font-bold text-white">Math Olympiad</h2>
+      <p class="text-muted text-sm">3rd Place, DRMC Inter-House Math Olympiad.</p></div>
+    </div></a>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4" data-gallery="inter-math-olympiad"></div>
+  </section>
+ 
+  <!-- <div class="group-header flex items-center gap-3">
+    <h2 class="text-2xl font-display font-bold text-white"><i class="fa-solid fa-robot text-amber"></i> The Robots — Build Photos</h2>
+    <p class="text-muted text-sm">Hardware shots of each build.</p>
+  </div> -->
+
+  <section id="robots">
+  <div class="group-header flex items-center gap-3">
+    <img src="assets/logos/me.png" class="org-logo" alt="Oxygen Robotics">
+    <div><h2 class="text-2xl font-display font-bold text-white">The Robots</h2>
+    <p class="text-muted text-sm">All hardware builds</p></div>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-4" data-gallery-multi="RC-Car-with-sensors,Surveillance-Car,robot-robosentinel,robot-robocurator,robot-patientpal,robot-phoenixecho,bluetooth-controlled-car,Obstacle-avoiding-car,tera,omega,hexa,hexa-omega,tera-omega-hexa,navigo-drilo-armify,navigo,drilo,armify,Power-bank,Home-Automation,exp"></div>
+</section>
+
+
+  <section id="mentors">
+  <div class="group-header flex items-center gap-3">
+    <img src="assets/logos/mentors.png" class="org-logo" alt="Mentor's">
+    <a href="assets/mentors'.jpg" target="_blank" rel="noopener noreferrer" class="text-sm text-muted hover:text-fuchsia transition">
+    <div><h2 class="text-2xl font-display font-bold text-white">Mentor's</h2>
+    <p class="text-muted text-sm">After SSC English Course.</p></div>
+  </div></a>
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-4" data-gallery="mentors"></div>
+  </section>
+
+  <section id="math-club">
+    <div class="group-header flex items-center gap-3">
+      <img src="assets/logos/drmcmc.png" class="org-logo" alt="FCA Math Club">
+      <a href="https://www.facebook.com/events/1440423743833520" target="_blank" rel="noopener noreferrer" class="text-sm text-muted hover:text-fuchsia transition">
+      <div><h2 class="text-2xl font-display font-bold text-white flex items-center gap-2">DRMC Math Club</h2>
+      <p class="text-muted text-sm">Volunteer, DRMC National Math Summit.</p></div>
+    </div></a>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4" data-gallery="math-club"></div>
+  </section>
+
+  <!-- <section id="olympiadians-hub">
+    <div class="group-header flex items-center gap-3">
+      <img src="assets/logos/olympiadians-hub.png" class="org-logo" alt="Bangladesh Olympiadians Hub">
+      <div><h2 class="text-2xl font-display font-bold text-white flex items-center gap-2">Bangladesh Olympiadians Hub <span class="text-xs text-fuchsia bg-fuchsia/10 px-2 py-1 rounded-full">Ongoing</span></h2>
+      <p class="text-muted text-sm">Panel Member, currently guiding participants across national olympiads.</p></div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4" data-gallery="olympiadians-hub"></div>
+  </section> -->
+
+  <section id="ca">
+    <div class="group-header flex items-center gap-3">
+      <img src="assets/logos/jlrc.png" class="org-logo" alt="Josephite Language & Reading Club">
+      <a href="https://www.instagram.com/p/DT56CXME0VV/?img_index=4&stkn=MXZzZTN4cjR5dmZmdA%3D%3D" target="_blank" rel="noopener noreferrer" class="text-sm text-muted hover:text-fuchsia transition">
+      <div><h2 class="text-2xl font-display font-bold text-white flex items-center gap-2">Josephite Language & Reading Club</h2>
+      <p class="text-muted text-sm">Campus Ambassador, 22nd National Language Fiesta.</p></div>
+    </div></a>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4" data-gallery="ca"></div>
+  </section>
+  
+</main>
+
+<div class="text-center pb-4">
+  <a href="index.html" class="text-sm text-indigo hover:underline">← Back to portfolio</a>
+</div>
+
+<footer id="contact" class="py-16 border-t border-line bg-ink2 text-center relative">
+  <div class="sec-blob bg-indigo w-[420px] h-[300px] -top-10 left-1/2 -translate-x-1/2"></div>
+  <div class="max-w-xl mx-auto px-6 space-y-6 relative z-10">
+    <h2 class="text-2xl font-display font-bold text-white">Let's Connect</h2>
+    <p class="text-muted text-sm">Open to robotics collaborations, olympiad teams, and STEM community projects.</p>
+    <div class="flex flex-wrap justify-center gap-6 text-2xl text-muted pt-2">
+      <a href="mailto:mahtasim.masrafi@gmail.com" target="_blank" rel="noopener noreferrer" title="Email" class="hover:text-fuchsia transition"><i class="fa-solid fa-envelope"></i></a>
+      <a href="tel:+8801848368290" target="_blank" rel="noopener noreferrer" title="Phone" class="hover:text-fuchsia transition"><i class="fa-solid fa-phone"></i></a>
+      <a href="https://github.com/Mahtasim06" target="_blank" rel="noopener noreferrer" title="GitHub" class="hover:text-fuchsia transition"><i class="fa-brands fa-github"></i></a>
+      <a href="https://instagram.com/mahtasim06" target="_blank" rel="noopener noreferrer" title="Instagram" class="hover:text-fuchsia transition"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://facebook.com/mahtasim06" target="_blank" rel="noopener noreferrer" title="Facebook" class="hover:text-fuchsia transition"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://t.me/mahtasim06" target="_blank" rel="noopener noreferrer" title="Telegram" class="hover:text-fuchsia transition"><i class="fa-brands fa-telegram"></i></a>
+      <a href="https://youtube.com/@Mahtasim" target="_blank" rel="noopener noreferrer" title="YouTube" class="hover:text-fuchsia transition"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://linktr.ee/mahtasim" target="_blank" rel="noopener noreferrer" title="Linktree" class="hover:text-fuchsia transition"><i class="fa-solid fa-link"></i></a>
+    </div>
+    <div class="pt-2">
+      <a href="assets/Mahtasim_Masrafi_Chowdhury_CV.pdf" target="_blank" rel="noopener noreferrer" download class="inline-flex items-center gap-2 text-sm text-indigo border border-indigo/40 px-4 py-2 rounded-lg hover:bg-indigo/10 transition">
+        <i class="fa-solid fa-file-pdf"></i> Download Official Resume (PDF)
+      </a>
+    </div>
+    <p class="text-xs text-muted/70 pt-8">© 2026 Mahtasim Masrafi Chowdhury · Dhaka, Bangladesh</p>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div id="lightbox" class="fixed inset-0 z-50 bg-black/90 items-center justify-center px-4">
+  <button id="lbClose" class="absolute top-6 right-6 text-slate-200 hover:text-white text-3xl"><i class="fa-solid fa-xmark"></i></button>
+  <button id="lbPrev" class="absolute left-3 md:left-8 top-1/2 -translate-y-1/2 text-slate-200 hover:text-fuchsia text-3xl"><i class="fa-solid fa-chevron-left"></i></button>
+  <button id="lbNext" class="absolute right-3 md:right-8 top-1/2 -translate-y-1/2 text-slate-200 hover:text-fuchsia text-3xl"><i class="fa-solid fa-chevron-right"></i></button>
+  <div class="max-w-4xl w-full">
+    <img id="lbImg" src="" alt="" class="w-full max-h-[75vh] object-contain rounded-lg border border-slate-700 bg-ink2">
+    <p id="lbCaption" class="text-center text-slate-200 font-mono text-sm mt-4"></p>
+  </div>
+</div>
+
+<script>
+  const groups = {
+    'iccp-russia': 15,
+    // 'german-math-olympiad': 8,
+    // 'iymc': 6,
+    'bdro': 6,
+    'bdbo': 4,
+    'bdeo': 11,
+    'bdmo': 11,
+    'bdjso': 4,
+    'boce': 5,
+    'buet-robo-carnival': 4,
+    'drmc-robotics-olympiad': 3,
+    'sagc': 5,
+    'aiub': 6,
+    'bcic': 6,
+    'drmc-tech-carnival': 4,
+    'heritage-in-frames': 2,
+    'robot-robosentinel': 2,
+    'robot-robocurator': 2,
+    'robot-patientpal': 4,
+    'robot-phoenixecho': 2,
+    'mentors': 5,
+    'math-club': 9,
+    'RC-Car-with-sensors': 3,
+    'Surveillance-Car': 2,
+    'Obstacle-avoiding-car': 1,
+    'bluetooth-controlled-car': 2,
+    'drilo': 1,
+    'navigo': 1,
+    'armify': 2,
+    'tera': 1,
+    'omega': 1,
+    'hexa': 1,
+    'hexa-omega': 1,
+    'tera-omega-hexa': 1,
+    'navigo-drilo-armify': 1,
+    'Power-bank': 2,
+    'Home-Automation': 12,
+    'exp': 7,
+    //'olympiadians-hub': 4,
+    'ca': 4,
+    'inter-math-olympiad': 6
+  };
+
+  const allImages = [];
+  Object.entries(groups).forEach(([slug, count]) => {
+    for (let i = 1; i <= count; i++) {
+      allImages.push({ src: `assets/photos/${slug}-${i}.jpg`, caption: `${slug.replace(/-/g,' ')} — photo ${i} of ${count}` });
+    }
+  });
+
+  let globalIndex = 0;
+ Object.entries(groups).forEach(([slug, count]) => {
+  let container = document.querySelector(`[data-gallery="${slug}"]`);
+  if (!container) {
+    document.querySelectorAll('[data-gallery-multi]').forEach(el => {
+      const slugs = el.getAttribute('data-gallery-multi').split(',').map(s => s.trim());
+      if (slugs.includes(slug)) container = el;
+    });
+  }
+  if (!container) return;
+  for (let i = 1; i <= count; i++) {
+    const idx = globalIndex;
+    const item = allImages[idx];
+    const fig = document.createElement('button');
+    fig.className = 'thumb block overflow-hidden rounded-lg border border-line';
+    fig.innerHTML = `<img src="${item.src}" alt="${item.caption}" class="w-full h-44 object-cover" loading="lazy">`;
+    fig.addEventListener('click', () => openLightbox(idx));
+    container.appendChild(fig);
+    globalIndex++;
+  }
+});
+
+  const lightbox = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lbImg');
+  const lbCaption = document.getElementById('lbCaption');
+  let currentIdx = 0;
+
+  function openLightbox(idx) {
+    currentIdx = idx;
+    updateLightbox();
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function updateLightbox() {
+    const item = allImages[currentIdx];
+    lbImg.src = item.src;
+    lbImg.alt = item.caption;
+    lbCaption.textContent = item.caption;
+  }
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.getElementById('lbClose').addEventListener('click', closeLightbox);
+  document.getElementById('lbPrev').addEventListener('click', () => { currentIdx = (currentIdx - 1 + allImages.length) % allImages.length; updateLightbox(); });
+  document.getElementById('lbNext').addEventListener('click', () => { currentIdx = (currentIdx + 1) % allImages.length; updateLightbox(); });
+  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') { currentIdx = (currentIdx - 1 + allImages.length) % allImages.length; updateLightbox(); }
+    if (e.key === 'ArrowRight') { currentIdx = (currentIdx + 1) % allImages.length; updateLightbox(); }
+  });
+</script>
+
+</body>
+</html>

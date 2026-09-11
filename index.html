@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahtasim Masrafi Chowdhury — Robotics Builder & STEM Competitor</title>
+<meta name="description" content="Portfolio of Mahtasim Masrafi Chowdhury — robotics builder, math olympiad medalist, and STEM competitor from Dhaka, Bangladesh.">
+<meta name="author" content="Mahtasim Masrafi Chowdhury">
+<meta name="keywords" content="Mahtasim Masrafi Chowdhury, Mahtasim, robotics, Oxygen Robotics, Dhaka Residential Model College, math olympiad, STEM Bangladesh">
+<meta property="og:title" content="Mahtasim Masrafi Chowdhury — Robotics Builder & STEM Competitor">
+<meta property="og:description" content="Robotics builder, math olympiad medalist, and STEM competitor from Dhaka, Bangladesh.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mahtasim Masrafi Chowdhury",
+  "url": "https://mahtasim06.github.io/",
+  "sameAs": ["https://github.com/Mahtasim06","https://linktr.ee/mahtasim","https://t.me/mahtasim06"],
+  "jobTitle": "Student / Robotics Enthusiast",
+  "address": {"@type":"PostalAddress","addressLocality":"Dhaka","addressCountry":"Bangladesh"},
+  "alumniOf": "Dhaka Residential Model College"
+}
+</script>
+<link rel="icon" href="assets/icon/favicon.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink:'#0B1220', ink2:'#0F1B33', card:'#121F3D', line:'#20304F',
+          fg:'#E5E9F0', muted:'#93A1B8',
+          indigo:'#6366F1', fuchsia:'#EC4899', amber:'#F59E0B',
+          teal:'#22D3EE', violet:'#A78BFA', emerald:'#34D399', rose:'#FB7185'
+        },
+        fontFamily: { display:['Outfit','sans-serif'], sans:['Inter','sans-serif'], mono:['IBM Plex Mono','monospace'] }
+      }
+    }
+  }
+</script>
+<style>
+  body{ background:#0B1220; }
+  .glow-text{
+    background: linear-gradient(90deg,#6366F1,#EC4899 55%,#F59E0B);
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  .grad-btn{ background: linear-gradient(90deg,#6366F1,#EC4899); }
+  .grad-btn:hover{ background: linear-gradient(90deg,#4F46E5,#DB2777); }
+  .card{ background:#121F3D; border:1px solid #20304F; }
+  .sec-blob{ position:absolute; border-radius:9999px; filter:blur(70px); opacity:.16; pointer-events:none; z-index:0; }
+  section{ position:relative; }
+  section > .max-w-6xl{ position:relative; z-index:1; }
+
+  .tier-International{ background:rgba(236,72,153,.16); color:#f9a8d4; }
+  .tier-National{ background:rgba(99,102,241,.18); color:#a5b4fc; }
+  .tier-Regional{ background:rgba(34,211,238,.16); color:#67e8f9; }
+  .tier-Event{ background:rgba(245,158,11,.18); color:#fcd34d; }
+
+  @keyframes riseIn{ from{ opacity:0; transform:translateY(22px);} to{ opacity:1; transform:translateY(0);} }
+  .rise{ animation:riseIn .7s cubic-bezier(.2,.7,.2,1) both; }
+  .d1{animation-delay:.05s;} .d2{animation-delay:.18s;} .d3{animation-delay:.31s;}
+  .d4{animation-delay:.44s;} .d5{animation-delay:.57s;} .d6{animation-delay:.7s;}
+
+  .fade-up{ opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s ease; }
+  .fade-up.in{ opacity:1; transform:translateY(0); }
+
+  #hero-canvas{ position:absolute; inset:0; width:100%; height:100%; }
+  .hero-wrap{ overflow:hidden; }
+
+  #mobileMenu{ transition:max-height .25s ease; }
+  ::selection{ background:#EC4899; color:#fff; }
+
+  a.achv{ transition:.2s ease; }
+  a.achv:hover{ transform:translateY(-3px); }
+  a.achv.glow-International:hover{ box-shadow:0 16px 30px -16px rgba(236,72,153,.45); border-color:rgba(236,72,153,.5); }
+  a.achv.glow-National:hover{ box-shadow:0 16px 30px -16px rgba(99,102,241,.45); border-color:rgba(99,102,241,.5); }
+  a.achv.glow-Regional:hover{ box-shadow:0 16px 30px -16px rgba(34,211,238,.45); border-color:rgba(34,211,238,.5); }
+  a.achv.glow-Event:hover{ box-shadow:0 16px 30px -16px rgba(245,158,11,.45); border-color:rgba(245,158,11,.5); }
+
+  .proj-card:hover{ transform:translateY(-4px); box-shadow:0 20px 40px -20px rgba(34,211,238,.4); border-color:rgba(34,211,238,.5); }
+  .exp-card:hover{ transform:translateY(-4px); box-shadow:0 16px 30px -18px rgba(167,139,250,.35); border-color:rgba(167,139,250,.5); }
+  .edu-card:hover{ box-shadow:0 16px 30px -18px rgba(52,211,153,.35); border-color:rgba(52,211,153,.5); }
+  .edu2-card:hover{ transform:translateY(-4px); box-shadow:0 16px 30px -18px rgba(52,211,153,.35); border-color:rgba(52,211,153,.5); }
+
+  .org-logo{ width:34px; height:34px; border-radius:9999px; flex-shrink:0; }
+
+  @media (prefers-reduced-motion: reduce){
+    .rise{ animation:none; opacity:1; transform:none; }
+    .fade-up{ transition:none; opacity:1; transform:none; }
+  }
+</style>
+</head>
+<body class="bg-ink text-fg font-sans antialiased">
+
+<!-- Nav -->
+<nav class="fixed top-0 w-full bg-ink/85 backdrop-blur-md border-b border-line z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <!-- <a href="#" class="font-display font-bold text-lg text-white">Mahtasim<span class="text-fuchsia">.</span></a> -->
+     <a href="#" class="flex items-center gap-2 font-display font-bold text-lg text-white">
+  <img src="assets/icon/favicon.png" alt="Mahtasim" class="w-9 h-9 rounded-full object-cover border border-line">
+  Mahtasim<span class="text-fuchsia"></span>
+</a>
+    <div class="space-x-7 text-sm font-medium hidden md:flex items-center">
+      <a href="#about" class="hover:text-fuchsia transition">About</a>
+      <a href="#projects" class="hover:text-teal transition">Projects</a>
+      <a href="#experience" class="hover:text-violet transition">Experience</a>
+      <a href="#achievements" class="hover:text-amber transition">Achievements</a>
+      <a href="gallery.html" target="_blank" rel="noopener noreferrer" class="hover:text-emerald transition">Gallery</a>
+      <a href="#contact" class="hover:text-fuchsia transition">Contact</a>
+      <a href="assets/Mahtasim_Masrafi_Chowdhury_CV.pdf" target="_blank" rel="noopener noreferrer" download class="grad-btn text-white font-semibold px-4 py-2 rounded-lg transition text-xs">Download CV</a>
+    </div>
+    <button id="menuBtn" class="md:hidden text-fg text-xl"><i class="fa-solid fa-bars"></i></button>
+  </div>
+  <div id="mobileMenu" class="md:hidden max-h-0 overflow-hidden bg-ink/95 border-t border-line">
+    <div class="flex flex-col px-6 py-4 gap-4 text-sm">
+      <a href="#about" class="hover:text-fuchsia">About</a>
+      <a href="#projects" class="hover:text-teal">Projects</a>
+      <a href="#experience" class="hover:text-violet">Experience</a>
+      <a href="#achievements" class="hover:text-amber">Achievements</a>
+      <a href="gallery.html" target="_blank" rel="noopener noreferrer" class="hover:text-emerald">Gallery</a>
+      <a href="#contact" class="hover:text-fuchsia">Contact</a>
+      <a href="assets/Mahtasim_Masrafi_Chowdhury_CV.pdf" target="_blank" rel="noopener noreferrer" download class="grad-btn text-white font-semibold px-4 py-2 rounded-lg text-center">Download CV</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section id="about" class="hero-wrap min-h-screen flex items-center pt-28 pb-16 px-6">
+  <canvas id="hero-canvas"></canvas>
+  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-14 items-center w-full relative z-10">
+    <div class="md:col-span-2 space-y-6">
+      <div class="rise d1 inline-flex items-center gap-2 font-mono text-xs text-fuchsia border border-fuchsia/30 bg-card/70 backdrop-blur rounded-full px-3 py-1">
+        <span class="w-2 h-2 rounded-full bg-fuchsia animate-pulse"></span> Open to robotics & STEM collaborations
+      </div>
+      <h1 class="rise d2 text-4xl md:text-6xl font-display font-extrabold tracking-tight text-white leading-[1.05]">
+        Mahtasim Masrafi<br><span class="glow-text">Chowdhury</span>
+      </h1>
+      <h2 class="rise d3 text-xl md:text-2xl text-muted font-display font-semibold">Robotics Builder · Math Olympiad Medalist · STEM Competitor</h2>
+      <p class="rise d4 text-muted leading-relaxed max-w-2xl">
+        Based in Dhaka, Bangladesh. I build functional robotics and IoT hardware, and compete across national and international STEM and academic olympiads — from math to robotics carnivals.
+      </p>
+
+      <div class="rise d5 flex flex-wrap gap-4 pt-2">
+        <a href="assets/Mahtasim_Masrafi_Chowdhury_CV.pdf" target="_blank" rel="noopener noreferrer" download class="grad-btn text-white font-semibold px-6 py-3 rounded-lg transition flex items-center gap-2">
+          <i class="fa-solid fa-download"></i> Download CV
+        </a>
+        <a href="gallery.html" target="_blank" rel="noopener noreferrer" class="border border-line bg-card hover:border-amber text-fg px-6 py-3 rounded-lg transition flex items-center gap-2">
+          <i class="fa-solid fa-images text-amber"></i> View Photo Gallery
+        </a>
+        <a href="#contact" class="border border-line bg-card hover:border-indigo text-fg px-6 py-3 rounded-lg transition">Contact</a>
+      </div>
+
+      <div class="rise d6 grid grid-cols-3 gap-4 pt-6 max-w-md">
+        <div>
+          <div class="font-display font-bold text-3xl text-white"><span data-count="21">0</span>+</div>
+          <div class="text-xs text-muted font-mono uppercase tracking-wide">Olympiad honors</div>
+        </div>
+        <div>
+          <div class="font-display font-bold text-3xl text-white"><span data-count="4">0</span></div>
+          <div class="text-xs text-muted font-mono uppercase tracking-wide">Robots built</div>
+        </div>
+        <div>
+          <div class="font-display font-bold text-3xl text-white"><span data-count="2">0</span></div>
+          <div class="text-xs text-muted font-mono uppercase tracking-wide">Countries reached</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rise d3 flex justify-center">
+      <div class="relative">
+        <div class="absolute -inset-3 rounded-2xl bg-gradient-to-tr from-indigo via-fuchsia to-amber opacity-30 blur-xl"></div>
+        <div class="relative w-56 h-56 md:w-80 md:h-80 rounded-2xl overflow-hidden border-4 border-card shadow-xl">
+          <img src="assets/profile/IMG_2500.jpg" alt="Mahtasim Masrafi Chowdhury" class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <div class="absolute -bottom-3 -right-3 bg-card border border-amber/40 rounded-xl px-3 py-2 font-mono text-xs text-amber shadow-lg">
+          <i class="fa-solid fa-medal"></i> 3× Int'l honoree
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-20 px-6 border-t border-line">
+  <div class="sec-blob bg-teal w-[420px] h-[420px] -top-20 -right-32"></div>
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-display font-bold text-white flex items-center gap-3 mb-3">
+      <i class="fa-solid fa-microchip text-teal"></i> Featured Robotics Projects
+    </h2>
+    <p class="text-muted text-sm mb-10">Click a project to see hardware build photos.</p>
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <a href="gallery.html#robots" target="_blank" rel="noopener noreferrer" class="proj-card card p-6 rounded-xl transition block">
+        <div class="flex items-center justify-between mb-3">
+          <div class="flex items-center gap-3">
+            <img src="assets/logos/oxygen-robotics.png" alt="Oxygen Robotics" class="org-logo">
+            <h3 class="text-xl font-display font-bold text-white">RoboSentinel</h3>
+          </div>
+          <i class="fa-solid fa-shield-halved text-teal/70"></i>
+        </div>
+        <p class="text-muted text-sm mb-4">Autonomous security robot engineered to monitor premises, detect anomalies, and secure houses when owners are away.</p>
+        <div class="flex gap-2 flex-wrap font-mono text-[11px] text-teal">
+          <span class="bg-teal/10 px-2 py-1 rounded">#Robotics</span>
+          <span class="bg-teal/10 px-2 py-1 rounded">#EmbeddedSystems</span>
+          <span class="bg-teal/10 px-2 py-1 rounded">#Security</span>
+        </div>
+      </a>
+
+      <a href="gallery.html#robots" target="_blank" rel="noopener noreferrer" class="proj-card card p-6 rounded-xl transition block">
+        <div class="flex items-center justify-between mb-3">
+          <div class="flex items-center gap-3">
+            <img src="assets/logos/oxygen-robotics.png" alt="Oxygen Robotics" class="org-logo">
+            <h3 class="text-xl font-display font-bold text-white">RoboCurator</h3>
+          </div>
+          <i class="fa-solid fa-basketball text-teal/70"></i>
+        </div>
+        <p class="text-muted text-sm mb-4">Autonomous robot designed for real-time ball collection and field management in Olympic-style sports challenges.</p>
+        <div class="flex gap-2 flex-wrap font-mono text-[11px] text-teal">
+          <span class="bg-teal/10 px-2 py-1 rounded">#Automation</span>
+          <span class="bg-teal/10 px-2 py-1 rounded">#Sensors</span>
+          <span class="bg-teal/10 px-2 py-1 rounded">#Mechatronics</span>
+        </div>
+      </a>
+
+      <a href="gallery.html#robots" target="_blank" rel="noopener noreferrer" class="proj-card card p-6 rounded-xl transition block">
+        <div class="flex items-center justify-between mb-3">
+          <div class="flex items-center gap-3">
+            <img src="assets/logos/oxygen-robotics.png" alt="Oxygen Robotics" class="org-logo">
+            <h3 class="text-xl font-display font-bold text-white">PatientPal</h3>
+          </div>
+          <i class="fa-solid fa-user-nurse text-teal/70"></i>
+        </div>
+        <p class="text-muted text-sm mb-4">Assistive monitoring robot designed to help caregivers keep track of homebound patients and elderly individuals.</p>
+        <div class="flex gap-2 flex-wrap font-mono text-[11px] text-teal">
+          <span class="bg-teal/10 px-2 py-1 rounded">#HealthcareTech</span>
+          <span class="bg-teal/10 px-2 py-1 rounded">#IoT</span>
+          <span class="bg-teal/10 px-2 py-1 rounded">#AssistiveRobotics</span>
+        </div>
+      </a>
+
+      <a href="gallery.html#robots" target="_blank" rel="noopener noreferrer" class="proj-card card p-6 rounded-xl transition block">
+        <div class="flex items-center justify-between mb-3">
+          <div class="flex items-center gap-3">
+            <img src="assets/logos/oxygen-robotics.png" alt="Oxygen Robotics" class="org-logo">
+            <h3 class="text-xl font-display font-bold text-white">Phoenix Echo</h3>
+          </div>
+          <i class="fa-solid fa-fire text-teal/70"></i>
+        </div>
+        <p class="text-muted text-sm mb-4">Disaster-rescue support robot built to navigate hazardous terrain and assist operations in the field.</p>
+        <div class="flex gap-2 flex-wrap font-mono text-[11px] text-teal">
+          <span class="bg-teal/10 px-2 py-1 rounded">#RescueRobotics</span>
+          <span class="bg-teal/10 px-2 py-1 rounded">#Hardware</span>
+          <span class="bg-teal/10 px-2 py-1 rounded">#RemoteControl</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience" class="py-20 px-6 border-t border-line">
+  <div class="sec-blob bg-violet w-[380px] h-[380px] top-10 -left-24"></div>
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-display font-bold text-white mb-12 flex items-center gap-3">
+      <i class="fa-solid fa-briefcase text-violet"></i> Leadership & Experience
+    </h2>
+    <div class="space-y-6">
+
+      <a href="https://www.facebook.com/OxygenRobotics/" target="_blank" rel="noopener noreferrer" class="exp-card card p-5 rounded-xl transition flex gap-4 items-start">
+        <img src="assets/logos/oxygen-robotics.png" alt="Oxygen Robotics" class="org-logo mt-1">
+        <div class="flex-1">
+          <div class="flex justify-between items-start mb-1 flex-wrap gap-2">
+            <h3 class="text-lg font-display font-bold text-white">Executive Member — Oxygen Robotics</h3>
+            <span class="text-xs font-mono text-white bg-fuchsia px-2 py-0.5 rounded-full">2026 – Present</span>
+          </div>
+          <p class="text-muted text-sm">Directing special initiatives and overseeing technical project developments across hardware teams.</p>
+        </div>
+      </a>
+
+      <a href="https://www.facebook.com/fcamathclub/" target="_blank" rel="noopener noreferrer" class="exp-card card p-5 rounded-xl transition flex gap-4 items-start">
+        <img src="assets/logos/fca-math.png" alt="FCA Math Club" class="org-logo mt-1">
+        <div class="flex-1">
+          <div class="flex justify-between items-start mb-1 flex-wrap gap-2">
+            <h3 class="text-lg font-display font-bold text-white">Co-Head of Academics — FCA Math Club</h3>
+            <span class="text-xs font-mono text-white bg-fuchsia px-2 py-0.5 rounded-full">2025 – Present</span>
+          </div>
+          <p class="text-muted text-sm">Leading academic operations and problem-solving curriculum for a non-profit math initiative.</p>
+        </div>
+      </a>
+
+      <a href="https://www.bdoh.online/#home" target="_blank" rel="noopener noreferrer" class="exp-card card p-5 rounded-xl transition flex gap-4 items-start">
+        <img src="assets/logos/olympiadians-hub.png" alt="Bangladesh Olympiadians Hub" class="org-logo mt-1">
+        <div class="flex-1">
+          <div class="flex justify-between items-start mb-1 flex-wrap gap-2">
+            <h3 class="text-lg font-display font-bold text-white">Panel Member — Bangladesh Olympiadians Hub</h3>
+            <span class="text-xs font-mono text-muted">2025 – 2026</span>
+          </div>
+          <p class="text-muted text-sm">Guiding student participants preparing for regional and national academic competitions.</p>
+        </div>
+      </a>
+
+      <a href="https://www.facebook.com/OxygenRobotics/" target="_blank" rel="noopener noreferrer" class="exp-card card p-5 rounded-xl transition flex gap-4 items-start">
+        <img src="assets/logos/oxygen-robotics.png" alt="Oxygen Robotics" class="org-logo mt-1">
+        <div class="flex-1">
+          <div class="flex justify-between items-start mb-1 flex-wrap gap-2">
+            <h3 class="text-lg font-display font-bold text-white">Team Member — Oxygen Robotics</h3>
+            <span class="text-xs font-mono text-muted">2023 – 2025</span>
+          </div>
+          <p class="text-muted text-sm">Built RoboSentinel, RoboCurator, PatientPal, and Phoenix Echo across four robotics builds.</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section class="py-20 px-6 border-t border-line">
+  <div class="sec-blob bg-amber w-[360px] h-[360px] -bottom-16 right-10"></div>
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-display font-bold text-white mb-10 flex items-center gap-3">
+      <i class="fa-solid fa-layer-group text-amber"></i> Skills
+    </h2>
+    <div class="flex flex-wrap gap-3">
+      <span class="card px-4 py-2 rounded-full text-sm"><i class="fa-solid fa-robot text-teal mr-2"></i>Robotics & Embedded Systems</span>
+      <span class="card px-4 py-2 rounded-full text-sm"><i class="fa-solid fa-wifi text-teal mr-2"></i>IoT Project Development</span>
+      <span class="card px-4 py-2 rounded-full text-sm"><i class="fa-solid fa-flask text-teal mr-2"></i>Scientific Problem-Solving</span>
+      <span class="card px-4 py-2 rounded-full text-sm"><i class="fa-solid fa-trophy text-amber mr-2"></i>STEM Competitions</span>
+      <span class="card px-4 py-2 rounded-full text-sm"><i class="fa-solid fa-comments text-violet mr-2"></i>Presentation & Negotiation</span>
+      <span class="card px-4 py-2 rounded-full text-sm"><i class="fa-solid fa-language text-fuchsia mr-2"></i>Bangla · English · Hindi</span>
+    </div>
+  </div>
+</section>
+
+<!-- Achievements -->
+<section id="achievements" class="py-20 px-6 border-t border-line">
+  <div class="sec-blob bg-fuchsia w-[420px] h-[420px] top-0 -right-40"></div>
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-display font-bold text-white mb-4 flex items-center gap-3">
+      <i class="fa-solid fa-trophy text-amber"></i> Honors & Proof of Achievements
+    </h2>
+    <p class="text-muted text-sm mb-10">Click any box to see photos from that competition.</p>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm" id="achv-grid"></div>
+  </div>
+</section>
+
+<!-- Education -->
+<section class="py-20 px-6 border-t border-line">
+  <div class="sec-blob bg-emerald w-[320px] h-[320px] bottom-0 right-0"></div>
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-display font-bold text-white mb-10 flex items-center gap-3">
+      <i class="fa-solid fa-graduation-cap text-emerald"></i> Education
+    </h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="edu-card card p-6 rounded-xl transition flex gap-4 items-start">
+        <img src="assets/logos/drmc.png" alt="Dhaka Residential Model College" class="org-logo mt-1">
+        <div>
+          <h3 class="font-display font-bold text-white mb-1">Higher Secondary Certificate — Candidate 2027</h3>
+          <p class="text-muted text-sm font-mono">Dhaka Residential Model College · 2025–2027</p>
+        </div>
+      </div>
+      <div class="edu-card card p-6 rounded-xl transition flex gap-4 items-start">
+        <img src="assets/logos/drmc.png" alt="Dhaka Residential Model College" class="org-logo mt-1">
+        <div>
+          <h3 class="font-display font-bold text-white mb-1">Secondary School Certificate</h3>
+          <p class="text-muted text-sm font-mono">Dhaka Board · GPA 5.00 · Dhaka Residential Model College ·</p>
+        </div>
+      </div>
+      <a href="gallery.html#mentors" target="_blank" rel="noopener noreferrer" class="edu2-card card p-6 rounded-xl transition flex gap-4 items-start md:col-span-2">
+        <img src="assets/logos/mentors.png" alt="Mentor's" class="org-logo mt-1">
+        <div>
+          <h3 class="font-display font-bold text-white mb-1">After SSC English Course</h3>
+          <p class="text-muted text-sm font-mono">Mentors' · 84% Marks in test Performance · 2025</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Preview -->
+<section class="py-20 px-6 border-t border-line">
+  <div class="sec-blob bg-emerald w-[380px] h-[380px] -top-10 -left-32"></div>
+  <div class="max-w-6xl mx-auto">
+    <div class="flex items-end justify-between flex-wrap gap-4 mb-10">
+      <h2 class="text-3xl font-display font-bold text-white flex items-center gap-3">
+        <i class="fa-solid fa-camera-retro text-emerald"></i> Field Log
+      </h2>
+      <a href="gallery.html" target="_blank" rel="noopener noreferrer" class="text-sm text-emerald hover:underline flex items-center gap-1">View full gallery <i class="fa-solid fa-arrow-right text-xs"></i></a>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <a href="gallery.html#iccp-russia" target="_blank" rel="noopener noreferrer" class="block overflow-hidden rounded-lg border border-line group">
+        <img src="assets/photos/iccp-russia-2.jpg" alt="ICCP Russia 2026" class="w-full h-40 object-cover group-hover:scale-105 transition duration-300">
+      </a>
+      <a href="gallery.html#bdro" target="_blank" rel="noopener noreferrer" class="block overflow-hidden rounded-lg border border-line group">
+        <img src="assets/photos/bdro-1.jpg" alt="BDRO" class="w-full h-40 object-cover group-hover:scale-105 transition duration-300">
+      </a>
+      <a href="gallery.html#bdmo" target="_blank" rel="noopener noreferrer" class="block overflow-hidden rounded-lg border border-line group">
+        <img src="assets/photos/bdmo-1.jpg" alt="BDMO" class="w-full h-40 object-cover group-hover:scale-105 transition duration-300">
+      </a>
+      <a href="gallery.html#bdbo" target="_blank" rel="noopener noreferrer" class="block overflow-hidden rounded-lg border border-line group">
+        <img src="assets/photos/bdbo-1.jpg" alt="BDBO" class="w-full h-40 object-cover group-hover:scale-105 transition duration-300">
+      </a>
+      <a href="gallery.html#drmc-robotics-olympiad" target="_blank" rel="noopener noreferrer" class="block overflow-hidden rounded-lg border border-line group">
+        <img src="assets/photos/drmc-robotics-olympiad-1.jpg" alt="DRMC Robotics Olympiad" class="w-full h-40 object-cover group-hover:scale-105 transition duration-300">
+      </a>
+      <a href="gallery.html#buet-robo-carnival" target="_blank" rel="noopener noreferrer" class="block overflow-hidden rounded-lg border border-line group">
+        <img src="assets/photos/buet-robo-carnival-1.jpg" alt="BUET Robo Carnival" class="w-full h-40 object-cover group-hover:scale-105 transition duration-300">
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact -->
+<footer id="contact" class="py-16 border-t border-line bg-ink2 text-center relative">
+  <div class="sec-blob bg-indigo w-[420px] h-[300px] -top-10 left-1/2 -translate-x-1/2"></div>
+  <div class="max-w-xl mx-auto px-6 space-y-6 relative z-10">
+    <h2 class="text-2xl font-display font-bold text-white">Let's Connect</h2>
+    <p class="text-muted text-sm">Open to robotics collaborations, olympiad teams, and STEM community projects.</p>
+    <div class="flex flex-wrap justify-center gap-6 text-2xl text-muted pt-2">
+      <a href="mailto:mahtasim.masrafi@gmail.com" target="_blank" rel="noopener noreferrer" title="Email" class="hover:text-fuchsia transition"><i class="fa-solid fa-envelope"></i></a>
+      <a href="tel:+8801848368290" target="_blank" rel="noopener noreferrer" title="Phone" class="hover:text-fuchsia transition"><i class="fa-solid fa-phone"></i></a>
+      <a href="https://github.com/Mahtasim06" target="_blank" rel="noopener noreferrer" title="GitHub" class="hover:text-fuchsia transition"><i class="fa-brands fa-github"></i></a>
+      <a href="https://instagram.com/mahtasim06" target="_blank" rel="noopener noreferrer" title="Instagram" class="hover:text-fuchsia transition"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://facebook.com/mahtasim06" target="_blank" rel="noopener noreferrer" title="Facebook" class="hover:text-fuchsia transition"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://t.me/mahtasim06" target="_blank" rel="noopener noreferrer" title="Telegram" class="hover:text-fuchsia transition"><i class="fa-brands fa-telegram"></i></a>
+      <a href="https://youtube.com/@Mahtasim" target="_blank" rel="noopener noreferrer" title="YouTube" class="hover:text-fuchsia transition"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://linktr.ee/mahtasim" target="_blank" rel="noopener noreferrer" title="Linktree" class="hover:text-fuchsia transition"><i class="fa-solid fa-link"></i></a>
+    </div>
+    <div class="pt-2">
+      <a href="assets/Mahtasim_Masrafi_Chowdhury_CV.pdf" target="_blank" rel="noopener noreferrer" download class="inline-flex items-center gap-2 text-sm text-indigo border border-indigo/40 px-4 py-2 rounded-lg hover:bg-indigo/10 transition">
+        <i class="fa-solid fa-file-pdf"></i> Download Official Resume (PDF)
+      </a>
+    </div>
+    <p class="text-xs text-muted/70 pt-8">© 2026 Mahtasim Masrafi Chowdhury · Dhaka, Bangladesh</p>
+  </div>
+</footer>
+
+<script>
+  // mobile menu
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => {
+    const open = mobileMenu.style.maxHeight && mobileMenu.style.maxHeight !== '0px';
+    mobileMenu.style.maxHeight = open ? '0px' : mobileMenu.scrollHeight + 'px';
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.style.maxHeight = '0px'));
+
+  // scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // animated stat counters
+  const counters = document.querySelectorAll('[data-count]');
+  const countObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const target = parseInt(el.getAttribute('data-count'), 10);
+      let cur = 0;
+      const step = Math.max(1, Math.round(target / 40));
+      const tick = () => {
+        cur = Math.min(target, cur + step);
+        el.textContent = cur;
+        if (cur < target) requestAnimationFrame(tick);
+      };
+      tick();
+      countObserver.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+  counters.forEach(el => countObserver.observe(el));
+
+  // ---- Achievements: one card each, whole card clickable, with org logo ----
+  const achievements = [
+    ["Winner & Participant","\"Children for Peace\" World Children's Conference — Russia, 2026","International","gallery.html#iccp-russia","iccp"],
+    ["Bronze Medalist","German Math Olympiad, Online Final — 2025","International","assets/gmo.jpg","gmo"],
+    ["Bronze Honour","International Youth Math Challenge — 2025","International","assets/iymc.jpg","iymc"],
+    ["Champion","BOCE National Round — 2026","National","gallery.html#boce","boce"],
+    ["National Finalist","BDRO — 2023, 2025","National","gallery.html#bdro","bdro"],
+    ["National Finalist","BDBO — 2024, 2025, 2026","National","gallery.html#bdbo","bdbo"],
+    ["National Finalist","BDEO — 2024, 2025, 2026","National","gallery.html#bdeo","bdeo"],
+    ["National Finalist","BDMO — 2025","National","gallery.html#bdmo","bdmo"],
+    ["National Finalist","BDJSO — 2025","National","gallery.html#bdjso","bdjso"],
+    ["First Runner-up","BDMO Regional Round — 2025","Regional","gallery.html#bdmo","bdmo"],
+    ["First Runner-up","BDBO Regional Round — 2025, 2026","Regional","gallery.html#bdbo","bdbo"],
+    ["First Runner-up","BDJSO Regional Round — 2025","Regional","gallery.html#bdjso","bdjso"],
+    ["First Runner-up","BCIC College Science Fest, Project Display — 2023","Event","gallery.html#bcic","bcic"],
+    ["First Runner-up","SAGC Mega Science Fest, Project Display — 2024","Event","gallery.html#sagc","sagc"],
+    ["Runner-up","DRMC Tech Carnival, Project Display — 2024","Event","gallery.html#drmc-tech-carnival","drmcit"],
+    ["2nd Place","Heritage in Frames, DRMC Ramadan Festival — 2024","Event","gallery.html#heritage-in-frames","dicc"],
+    ["First Runner-up","Robotics Olympiad, DRMC Science Carnival — 2026","Event","gallery.html#drmc-robotics-olympiad","drmcsc"],
+    ["Second Runner-up","BDBO Regional Round — 2024","Regional","gallery.html#bdbo","bdbo"],
+    ["Second Runner-up","AIUB CS Fest, Project Display — 2024","Event","gallery.html#aiub","aiub"],
+    ["Second Runner-up","Robo Olympiad, BUET Robo Carnival — 2026","Event","gallery.html#buet-robo-carnival","buet"],
+    ["3rd Place","Math Olympiad, DRMC Inter-House Math Olympiad — 2026","Event","gallery.html#inter-math-olympiad","drmcmc"],
+    //["Winner","BoiBook Astronomy Quiz","Event","gallery.html#boibook-quizzes","boibook"],
+  ];
+  const grid = document.getElementById('achv-grid');
+  achievements.forEach((a) => {
+    const [title, detail, tier, href, logo] = a;
+    const el = document.createElement('a');
+    el.href = href;
+    el.target = '_blank';
+    el.className = `achv glow-${tier} card p-4 rounded-lg flex flex-col justify-between transition block fade-up`;
+    el.innerHTML = `
+      <div class="flex items-center justify-between mb-3">
+        <img src="assets/logos/${logo}.png" alt="" class="w-8 h-8 rounded-full">
+        <span class="tier-${tier} text-[10px] font-mono uppercase px-2 py-1 rounded-full">${tier}</span>
+      </div>
+      <div><strong class="text-white">${title}</strong><div class="text-muted text-xs mt-1">${detail}</div></div>
+    `;
+    grid.appendChild(el);
+    observer.observe(el);
+  });
+
+  // ---- Hero canvas: drifting node network ----
+  const canvas = document.getElementById('hero-canvas');
+  const ctx = canvas.getContext('2d');
+  const heroSection = canvas.closest('section');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let nodes = [];
+  const colors = ['#6366F1', '#EC4899', '#F59E0B'];
+
+  function resize() {
+    canvas.width = heroSection.clientWidth;
+    canvas.height = heroSection.clientHeight;
+    const count = Math.min(60, Math.floor((canvas.width * canvas.height) / 26000));
+    nodes = Array.from({length: count}, () => ({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      vx: (Math.random()-0.5) * 0.25,
+      vy: (Math.random()-0.5) * 0.25,
+      c: colors[Math.floor(Math.random()*colors.length)],
+    }));
+  }
+
+  function draw() {
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    for (let i=0; i<nodes.length; i++) {
+      const n = nodes[i];
+      n.x += n.vx; n.y += n.vy;
+      if (n.x < 0 || n.x > canvas.width) n.vx *= -1;
+      if (n.y < 0 || n.y > canvas.height) n.vy *= -1;
+    }
+    for (let i=0; i<nodes.length; i++) {
+      for (let j=i+1; j<nodes.length; j++) {
+        const a = nodes[i], b = nodes[j];
+        const dx = a.x-b.x, dy = a.y-b.y;
+        const dist = Math.sqrt(dx*dx+dy*dy);
+        if (dist < 130) {
+          ctx.strokeStyle = 'rgba(99,102,241,' + (0.18 * (1 - dist/130)) + ')';
+          ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke();
+        }
+      }
+    }
+    for (const n of nodes) {
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, 2.4, 0, Math.PI*2);
+      ctx.fillStyle = n.c + '77';
+      ctx.fill();
+    }
+    if (!reduceMotion) requestAnimationFrame(draw);
+  }
+
+  window.addEventListener('resize', resize);
+  resize();
+  draw();
+</script>
+
+</body>
+</html>
